@@ -28,3 +28,7 @@ export default App;
 // git clone https://gitee.com/react-course-series/react-router-start.git
 
 // 两种Router: HashRouter(使用URL的哈希值实现)  BrowserRouter（使用h5的history.pushState实现）
+
+// Link: 用于指定导航链接，完成路由跳转， 最终渲染为a标签
+
+// Routes：提供一个路由出口，满足条件的路由组件会渲染到组件内部
