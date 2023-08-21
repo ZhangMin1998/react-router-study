@@ -26,3 +26,5 @@ export default App;
 
 //  安装react-router  npm i react-router-dom@6
 // git clone https://gitee.com/react-course-series/react-router-start.git
+
+// 两种Router: HashRouter(使用URL的哈希值实现)  BrowserRouter（使用h5的history.pushState实现）
