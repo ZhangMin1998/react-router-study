@@ -1,6 +1,7 @@
 // 引入组件
-import About from './About'
-import Home from './Home.js'
+import About from './About.jsx'
+import Home from './Home.jsx'
+import Login from './Login.jsx'
 
 // 进行路由配置
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
@@ -10,11 +11,12 @@ function App() {
     <div className="App">
       {/* 声明当前要用一个非hash模式的路由 */}
       <BrowserRouter>
-        <Link to="/">首页</Link>
+        <Link to="/home">首页</Link>
         <Link to="/about">关于</Link>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
