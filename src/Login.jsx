@@ -5,8 +5,8 @@ function Login () {
   // 执行函数
   const navigate = useNavigate()
   const goHome = () => {
-    // navigate('/home')
-    navigate('/home', {replace: true}) // 注: 如果在跳转时不想添加历史记录，可以添加额外参数replace 为true
+    navigate('/home?id=999')
+    // navigate('/home?id=999', {replace: true}) // 注: 如果在跳转时不想添加历史记录，可以添加额外参数replace 为true
   }
   // function goHome () {
   //   navigate('/home')
