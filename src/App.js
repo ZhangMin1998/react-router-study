@@ -15,7 +15,7 @@ function App() {
         <Link to="/about">关于</Link>
         <Routes>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/about/:id" element={<About />}></Route>
           <Route path="/" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,12 @@
+import { useParams } from 'react-router-dom'
+
 function About () {
+  const params = useParams()
   return (
-    <div>about</div>
+    <div>
+      about --
+      params: {params.id}
+    </div>
   )
 }
 
