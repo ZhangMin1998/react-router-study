@@ -4,7 +4,7 @@ function About () {
   const params = useParams()
   return (
     <div>
-      about --
+      this is about --
       params: {params.id}
     </div>
   )

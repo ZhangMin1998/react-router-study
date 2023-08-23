@@ -10,7 +10,7 @@ function Home () {
   }
   return (
     <div>
-      home --
+      this is home --
       id: {id}
       <button onClick={ goAbout }>跳转到about</button>
     </div>
