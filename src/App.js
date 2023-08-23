@@ -19,7 +19,8 @@ function App() {
           <Route path="/about/:id" element={<About />}></Route> */}
           <Route path="/" element={<Layout />}>
             {/* 定义二级路由 */}
-            <Route path="/home" element={<Home />}></Route>
+            {/* <Route path="/home" element={<Home />}></Route> */}
+            <Route index element={<Home />}></Route>
             <Route path="/about/:id" element={<About />}></Route>
           </Route>
           <Route path="/Login" element={<Login />}></Route>
@@ -40,3 +41,11 @@ export default App;
 // Link: 用于指定导航链接，完成路由跳转， 最终渲染为a标签
 
 // Routes：提供一个路由出口，满足条件的路由组件会渲染到组件内部
+
+
+
+
+// 默认二级路由
+// 1. 给默认二级路由标记index属性
+// 2. 把原本的路径path属性去掉
+// 默认二级不再具有自己的路径
