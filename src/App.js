@@ -3,6 +3,7 @@ import About from './About.jsx'
 import Home from './Home.jsx'
 import Login from './Login.jsx'
 import Layout from './Layout.jsx'
+import NotFound from './NotFound.jsx'
 
 // 进行路由配置
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
@@ -24,6 +25,8 @@ function App() {
             <Route path="/about/:id" element={<About />}></Route>
           </Route>
           <Route path="/Login" element={<Login />}></Route>
+          {/* 当所有路径都没匹配时渲染此路由 */}
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
